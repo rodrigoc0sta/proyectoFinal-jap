@@ -1,13 +1,9 @@
-/* body{
-    background-color: #ebebeb;
-} */
-
-.container{
+.container {
     width: 100%;
     display: flex;
 }
 
-#info-producto{
+#info-producto {
     justify-content: space-around;
     /* background-color:white; */
     border: 2px solid #a2a4a3;
@@ -18,17 +14,17 @@
     padding: 50px;
 }
 
-#principal{
-    display: flex;   
+#principal {
+    display: flex;
 }
 
-.info{
+.info {
     width: 55%;
     display: flex;
     flex-direction: column;
 }
 
-#imagen-grande{
+#imagen-grande {
     width: 50%;
     height: 100%;
     display: flex;
@@ -38,12 +34,12 @@
     padding-left: 10px;
 }
 
-#imagen-grande img{
+#imagen-grande img {
     width: 100%;
     height: auto;
 }
 
-#contenedor-doble{
+#contenedor-doble {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -80,9 +76,144 @@
     border-color: #dc3545;
 }
 
-.cont-prodRelacionados{
+#agregarAlCarrito {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    width: 30%;
+    min-width: 100px;
+}
+
+.cont-prodRelacionados {
     width: 60%;
     gap: 1%;
     display: flex;
     flex-direction: row;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        justify-content: center;
+    }
+
+    #info-producto {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    #imagen-grande {
+        width: 80%;
+    }
+
+    #contenedor-doble {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #comentariosParrafo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #cajacomentarios {
+        width: 100%;
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    #txtareaOpinion {
+        width: 100%;
+    }
+
+    #agregarAlCarrito {
+
+        width: 100%;
+        margin-bottom: 50px;
+
+    }
+
+}
+
+@media (max-width: 999px) {
+    #agregarAlCarrito {
+
+        width: 100%;
+        
+
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        justify-content: center;
+    }
+
+    #info-producto {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .p-1 {
+        font-size: 14px;
+        min-width: 50px;
+    }
+
+    #principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    #imagen-grande {
+        width: 80%;
+    }
+
+    #contenedor-doble {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #comentariosParrafo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #cajacomentarios {
+        width: 100%;
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    #txtareaOpinion {
+        width: 100%;
+    }
+
+    #agregarAlCarrito {
+
+        width: 100%;
+        margin-bottom: 50px;
+
+    }
+
+
 }
