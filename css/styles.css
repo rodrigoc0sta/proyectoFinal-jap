@@ -233,3 +233,7 @@ button:hover {
 #filtrarPrecio, #filtrarLimpiar {
   border-radius: 3px;
 }
+
+input[type='number'] {
+  min-width: 60px;
+}
